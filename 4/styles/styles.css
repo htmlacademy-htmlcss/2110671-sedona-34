@@ -1,0 +1,269 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+body {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+  background-color: #FFFFFF;
+}
+
+.button {
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  text-align: center;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: unset;
+}
+
+.search-hotel-button,
+.newsletter-button {
+  font-size: 20px;
+  line-height: 36px;
+}
+
+.button-brown {
+  background-color: #756157;
+}
+
+.button-blue {
+  background-color: #82B3D3;
+}
+
+.button-green {
+  background-color: #7DB54F;
+}
+
+.button-blank {
+  background-color: unset;
+  text-transform: inherit;
+}
+
+/* Шапка */
+
+.navigation-link {
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #000000;
+  text-decoration: none;
+}
+
+/* Интро */
+
+.welcome {
+  background-image: url("../images/background/background-index.jpg");
+  background-color: #4a80ac;
+  background-repeat: no-repeat;
+}
+
+/* Список преимуществ */
+
+.reasons-discription {
+  text-align: center;
+}
+
+.reasons-title {
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.reasons-text {
+  font-size: 22px;
+  line-height: 26px;
+  color: #333333;
+}
+
+.reasons {
+  text-align: center;
+}
+
+.item-dark-blue {
+  background-color: #82B3D3;
+  color: #FFFFFF;
+}
+
+.reasons-item h3,
+.features-item h4 {
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+
+.features-item p {
+  color: #333333;
+}
+
+.item-light-blue {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.item-light-blue p {
+  color: #333333;
+}
+
+.item-blue {
+  background-color: rgba(131, 179, 211, 0.2);
+}
+
+.item-blue p {
+  color: #333333;
+}
+
+/* Поиск гостиницы */
+
+.search-hotel {
+  text-align: center;
+}
+
+.search-hotel-title {
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.search-hotel-text {
+  font-size: 22px;
+  line-height: 26px;
+  color: #333333;
+}
+
+/* Рассылка */
+
+.newsletter {
+  background-image: url("../images/background/background-mailing.jpg");
+  background-color: #4a80ac;
+  background-repeat: no-repeat;
+  text-align: center;
+  color: #FFFFFF;
+}
+.newsletter-title {
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.newsletter-text {
+  font-size: 22px;
+  line-height: 26px;
+}
+
+/* Футтер */
+
+.footer-contacts-tel {
+  font-size: 40px;
+  line-height: 40px;
+  color: #000000;
+  text-decoration: none;
+}
+
+/* Фильтры */
+
+.filters {
+  background-image: url("../images/background/background-filter.jpg");
+  background-color: #4a80ac;
+  background-repeat: no-repeat;
+  color: #FFFFFF;
+}
+
+.filters-title {
+  font-size: 60px;
+  line-height: 78px;
+}
+
+.breadcrumbs-link {
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.filter-hotel-title {
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+/* Сортировка отелей */
+
+.sorting-results {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.select-control {
+  color: #333333;
+}
+
+.hotel-item-title {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+}
+
+.hotel-info {
+  color: #333333;
+}
+
+.rating {
+  font-size: 16px;
+  line-height: 20px;
+  background-color: #F2F2F2;
+  color: #333333;
+}
+
+/* Пагинация */
+
+.pagination-link {
+color: #FFFFFF;
+background-color: #82B3D3;
+text-decoration: none;
+font-size: 20px;
+line-height: 36px;
+font-weight: 700;
+}
+
+.pagination-current {
+color: #000000;
+background-color: #F2F2F2;
+}
+
+/* Количество гостиниц */
+
+.hotel-select {
+  color: #333333;
+}
+
+.select-number {
+  color: #333333;
+}
+
+/* Рассылка без фона */
+
+.newsletter-no-background {
+  text-align: center;
+  color: #000000;
+}
+
+.newsletter-no-background p {
+color: #333333;
+}
