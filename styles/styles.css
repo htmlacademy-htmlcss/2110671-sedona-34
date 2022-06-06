@@ -48,6 +48,10 @@ body {
 
 }
 
+.container {
+  padding: 0 70px;
+}
+
 .button {
   font-family: inherit;
   font-size: 16px;
@@ -83,13 +87,13 @@ body {
   text-transform: inherit;
 }
 
+
 /* Шапка */
 
 .navigation {
   display: flex;
-  width: 1060px;
-  margin: 0 auto;
-
+  /* width: 1060px;
+  margin: 0 auto; */
 }
 
 .navigation-logo {
@@ -184,11 +188,13 @@ body {
 
 .features-item {
   width: 400px;
+  height: 383px;
 }
 
 
 .reasons-item-block {
   width: 400px;
+  height: 384px;
 }
 
 .reasons-item-image img {
@@ -205,6 +211,11 @@ body {
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
+}
+
+.reasons-item-light-blue-title,
+.reasons-item-blue-title {
+  margin: 0;
 }
 
 
@@ -298,7 +309,10 @@ body {
 /* Фильтры */
 
 .filters {
+  padding-top: 35px;
+  padding-bottom: 70px;
   background-image: url("../images/background/background-filter.jpg");
+  background-size: cover;
   background-color: #4a80ac;
   background-repeat: no-repeat;
   color: #FFFFFF;
@@ -307,11 +321,23 @@ body {
 .filters-title {
   font-size: 60px;
   line-height: 78px;
+  margin-top: 0;
+}
+
+.breadcrumbs {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .breadcrumbs-link {
   font-size: 16px;
   line-height: 21px;
+}
+
+.filter-hotel {
+  display: flex;
 }
 
 .filter-hotel-title {
@@ -320,7 +346,29 @@ body {
   font-weight: 700;
 }
 
+.filter-hotel-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.filter-hotel-infrastructure,
+.filter-hotel-house,
+.filter-hotel-cost {
+  border: none;
+}
+
+.button-filters-accept {
+  min-width: 160px;
+  height: 48px;
+  border-radius: 4px;
+}
+
 /* Сортировка отелей */
+
+.sorting {
+  display: flex;
+}
 
 .sorting-results {
   font-size: 30px;
@@ -331,6 +379,14 @@ body {
 
 .select-control {
   color: #333333;
+}
+
+.hotel-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .hotel-item-title {
@@ -353,18 +409,42 @@ body {
 
 /* Пагинация */
 
+.hotel-pagination {
+  display: flex;
+}
+
+.pagination{
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.pagination-item {
+  display: flex;
+  margin-right: 8px;
+  width: 55px;
+  height: 55px;
+}
+
+.hotel-select {
+  margin-left: auto;
+}
+
 .pagination-link {
-color: #FFFFFF;
-background-color: #82B3D3;
-text-decoration: none;
-font-size: 20px;
-line-height: 36px;
-font-weight: 700;
+  width: 100%;
+  border-radius: 4px;
+  color: #FFFFFF;
+  background-color: #82B3D3;
+  text-decoration: none;
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 700;
 }
 
 .pagination-current {
-color: #000000;
-background-color: #F2F2F2;
+  color: #000000;
+  background-color: #F2F2F2;
 }
 
 /* Количество гостиниц */
@@ -385,5 +465,5 @@ background-color: #F2F2F2;
 }
 
 .newsletter-no-background p {
-color: #333333;
+  color: #333333;
 }
