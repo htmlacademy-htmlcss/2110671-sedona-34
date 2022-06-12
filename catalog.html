@@ -66,7 +66,8 @@
                 <li class="breadcrumbs-item">
 
                   <a class="breadcrumbs-link" href="index.html">
-                    <span class="visually-hidden">На главную страницу</span>
+                    <!-- visually-hidden -->
+                    <span class="">На главную страницу</span>
                   </a>
 
                 </li>
@@ -217,11 +218,17 @@
                   <span class="hotel-price">От 4000 ₽</span>
                 </p>
 
-                <a class="hotel-more-button button button-brown" href="#">Подробнее</a>
-                <button class="hotel-favourites-button button button-blue" type="button">В избранное</button>
+                <div class="hotel-item-actions">
+                  <a class="hotel-more-button button button-brown" href="#">Подробнее</a>
+                  <button class="hotel-favourites-button button button-blue" type="button">В избранное</button>
+                </div>
+
 
                 <div class="rating">
-                  <p>Рейтинг: 8,5</p>
+                  <div class="rating-stars">
+
+                  </div>
+                  <span class="rating-points">Рейтинг: 8,5</span>
                 </div>
 
               </li>
@@ -239,11 +246,16 @@
                   <span class="hotel-price">От 5000 ₽</span>
                 </p>
 
-                <a class="hotel-more-button button button-brown" href="#">Подробнее</a>
-                <button class="hotel-favourites-button button button-green" type="button">В избранном</button>
+                <div class="hotel-item-actions">
+                  <a class="hotel-more-button button button-brown" href="#">Подробнее</a>
+                  <button class="hotel-favourites-button button button-green" type="button">В избранном</button>
+                </div>
 
                 <div class="rating">
-                  <p>Рейтинг: 9,2</p>
+                  <div class="rating-stars">
+
+                  </div>
+                  <span class="rating-points">Рейтинг: 9,2</span>
                 </div>
 
               </li>
@@ -261,11 +273,16 @@
                   <span class="hotel-price">От 2500 ₽</span>
                 </p>
 
-                <a class="hotel-more-button button button-brown" href="#">Подробнее</a>
-                <button class="hotel-favourites-button button button-blue" type="button">В избранное</button>
+                <div class="hotel-item-actions">
+                  <a class="hotel-more-button button button-brown" href="#">Подробнее</a>
+                  <button class="hotel-favourites-button button button-blue" type="button">В избранное</button>
+                </div>
 
                 <div class="rating">
-                  <p>Рейтинг: 6,9</p>
+                  <div class="rating-stars">
+
+                  </div>
+                  <span class="rating-points">Рейтинг: 6,9</span>
                 </div>
 
               </li>
@@ -283,11 +300,16 @@
                   <span class="hotel-price">От 1500 ₽</span>
                 </p>
 
-                <a class="hotel-more-button button button-brown" href="#">Подробнее</a>
-                <button class="hotel-favourites-button button button-blue" type="button">В избранное</button>
+                <div class="hotel-item-actions">
+                  <a class="hotel-more-button button button-brown" href="#">Подробнее</a>
+                  <button class="hotel-favourites-button button button-blue" type="button">В избранное</button>
+                </div>
 
                 <div class="rating">
-                  <p>Рейтинг: 5,0</p>
+                  <div class="rating-stars">
+
+                  </div>
+                  <span class="rating-points">Рейтинг: 5,0</span>
                 </div>
 
               </li>
@@ -301,39 +323,27 @@
             <ul class="pagination">
 
               <li class="pagination-item">
-
                 <a class="pagination-link pagination-current">1</a>
-
               </li>
 
               <li class="pagination-item">
-
                 <a class="pagination-link" href="#">2</a>
-
               </li>
 
               <li class="pagination-item">
-
                 <a class="pagination-link" href="#">3</a>
-
               </li>
 
               <li class="pagination-item">
-
                 <a class="pagination-link" href="#">4</a>
-
               </li>
 
               <li class="pagination-item">
-
                 <a class="pagination-link" href="#">...</a>
-
               </li>
 
               <li class="pagination-item">
-
                 <a class="pagination-link" href="#">10</a>
-
               </li>
 
             </ul>
@@ -352,7 +362,7 @@
 
         </section>
 
-          <section class="newsletter-no-background">
+          <section class="newsletter newsletter-no-background">
             <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
             <p class="newsletter-text">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
 
@@ -366,7 +376,7 @@
 
         </main>
 
-        <footer class="page-footer">
+        <footer class="page-footer container">
 
           <div class="footer-social">
             <h2 class="visually-hidden">Социальные сети</h2>
