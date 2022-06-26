@@ -509,30 +509,25 @@ body {
   justify-content: space-between;
   min-height: 120px;
   align-items: center;
-  padding-top: 29px;
+  padding-top: 40px;
   padding-bottom: 30px;
 }
 
 .footer-social-list {
   margin: 0;
-  margin-top: 5px;
   padding: 0;
-  width: 125px;
+  width: 154px;
   display: flex;
   flex-wrap: wrap;
   list-style-type: none;
 }
 
-.footer-social-item:not(:last-child) {
-  margin-right: 23px;
-}
-
 .footer-social-link {
-  display: block;
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 25px;
-  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 47px;
+  height: 40px;
   color: #83B3D3;
 }
 
@@ -569,7 +564,6 @@ body {
 .footer-contacts {
   width: 720px;
   margin-right: 10px;
-  margin-top: 12px;
   text-align: center;
 }
 
@@ -583,7 +577,7 @@ body {
 .filters {
   padding-top: 35px;
   padding-bottom: 70px;
-  margin-bottom: 65px;
+  margin-bottom: 56px;
   background-image: url("../images/background/background-filter.jpg");
   background-size: cover;
   background-color: #4a80ac;
@@ -704,7 +698,7 @@ body {
 .hotel-sorting {
   padding-left: 73px;
   padding-right: 71px;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 }
 
 .sorting {
@@ -733,7 +727,7 @@ body {
 }
 
 .select-control {
-  margin-right: 81px;
+  margin-right: 79px;
   padding-left: 13px;
   width: 287px;
 }
@@ -811,7 +805,7 @@ body {
 
 .hotel-type {
   display: inline-block;
-  margin-right: 20px;
+  margin-right: 23px;
   min-width: 133px;
 }
 
@@ -875,7 +869,7 @@ body {
 .rating-points {
   padding: 9px 15px 8px;
   background-color: #F2F2F2;
-  width: 160px;
+  width: 140px;
   height: 37px;
   border-radius: 4px;
   text-align: center;
@@ -887,7 +881,7 @@ body {
   display: flex;
   align-items: center;
   border-top: 1px solid #E6E6E6;
-  padding-top: 30px;
+  padding-top: 29px;
 }
 
 .pagination{
@@ -907,8 +901,8 @@ body {
 }
 
 .pagination-link {
-  min-width: 55px;
-  height: 55px;
+  min-width: 60px;
+  height: 60px;
   padding: 10px;
   border-radius: 4px;
   color: #FFFFFF;
