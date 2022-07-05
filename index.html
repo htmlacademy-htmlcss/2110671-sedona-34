@@ -250,6 +250,59 @@
 
       </footer>
 
+      <div class="modal-container">
+        <div class="modal modal-search">
+          <button class="modal-close-button">
+            <span class="visually-hidden">Закрыть</span>
+          </button>
+          <section class="modal-content">
+            <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+
+            <form class="search-hotel-form" method="get" action="https://echo.htmlacademy.ru">
+              <div class="checkin">
+
+                <label for="checkin-date" class="search-form-field checkin-date">Дата Заезда:</label>
+                <input name="checkin-date" class="search-hotel-date" type="text" id="checkin-date" value="" placeholder="27 апреля 2020">
+                <button class="form-search-calendar" type="button">
+                  <span class="visually-hidden">Выбор даты заезда</span>
+                </button>
+                <span class="message message-error">Мы не можем отправить вас в прошлое.</span>
+              </div>
+
+              <div class="checkout">
+                <label for="checkout-date" class="search-form-field checkout-date">Дата Выезда:</label>
+                <input name="checkout-date" class="search-hotel-date" type="text" id="checkout-date" value="" placeholder="1 сентября 2021">
+                <button class="form-search-calendar" type="button">
+                  <span class="visually-hidden">Выбор даты выезда</span>
+                </button>
+                <span class="message">На эти даты есть свободные номера. Пока есть.</span>
+              </div>
+
+              <div class="search-form-counter search-form-adults">
+                <label for="adults">Взрослые:</label>
+                <div class="number-input-container">
+                  <button class="number-input-button button-minus" type="button" aria-label="Уменьшить количество"></button>
+                  <input name="adults" class="number-input" type="number" id="adults" min="1" value="2">
+                  <button class="number-input-button button-plus" type="button" aria-label="Увеличить количество"></button>
+                </div>
+              </div>
+
+              <div class="search-form-counter search-form-children">
+                <label for="children">Дети:</label>
+                <div class="number-input-container">
+                  <button class="number-input-button button-minus number-input-cursor" type="button" aria-label="Уменьшить количество"></button>
+                  <input name="children" class="number-input" type="number" id="children" min="0" value="1">
+                  <button class="number-input-button button-plus number-input-cursor" type="button" aria-label="Увеличить количество"></button>
+                </div>
+              </div>
+
+              <button class="search-hotel-button" type="submit">Найти</button>
+
+            </form>
+          </section>
+        </div>
+      </div>
+
     </div>
 
   </body>
