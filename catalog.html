@@ -73,7 +73,7 @@
                 <li class="breadcrumbs-item">
 
                   <a class="breadcrumbs-link" href="index.html">
-                    <svg width="13" height="13" aria-hidden="true" focusable="false" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="m.162 6.15 6-5.5 6 5.5v6.2h-12v-6.2Zm1 .4v4.8h10v-4.8l-5-4.5-5 4.5Zm4 3.8h-1v-3.5h4v3.5h-1v-2.5h-2v2.5Z" fill="#fff"/></svg>
+                    <svg width="13" height="13" aria-hidden="true" focusable="false" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="m.162 6.15 6-5.5 6 5.5v6.2h-12v-6.2Zm1 .4v4.8h10v-4.8l-5-4.5-5 4.5Zm4 3.8h-1v-3.5h4v3.5h-1v-2.5h-2v2.5Z" fill="currentColor"/></svg>
                     <span class="visually-hidden">На главную страницу</span>
                   </a>
 
@@ -96,23 +96,26 @@
                   <ul class="filter-hotel-list">
 
                     <li class="filter-hotel-item">
-                      <label class="control">
-                        <input class="control-input" type="checkbox" name="Бассейн" checked>
-                        Бассейн
+                      <label class="control" tabindex="0">
+                        <input class="visually-hidden control-input" type="checkbox" name="Бассейн" checked>
+                        <span class="control-mark"></span>
+                        <span class="control-label">Бассейн</span>
                       </label>
                     </li>
 
                     <li class="filter-hotel-item">
-                      <label class="control">
-                        <input class="control-input" type="checkbox" name="Парковка" checked>
-                        Парковка
+                      <label class="control" tabindex="0">
+                        <input class="visually-hidden control-input" type="checkbox" name="Парковка" checked>
+                        <span class="control-mark"></span>
+                        <span class="control-label">Парковка</span>
                       </label>
                     </li>
 
                     <li class="filter-hotel-item">
-                      <label class="control">
-                        <input class="control-input" type="checkbox" name="wi-fi">
-                        Wi-Fi
+                      <label class="control" tabindex="0">
+                        <input class="visually-hidden control-input" type="checkbox" name="wi-fi">
+                        <span class="control-mark"></span>
+                        <span class="control-label">Wi-Fi</span>
                       </label>
                     </li>
 
@@ -127,23 +130,26 @@
                   <ul class="filter-hotel-list">
 
                     <li class="filter-hotel-item">
-                      <label class="control">
-                        <input class="control-input" type="radio" name="type-house" value="hotel" checked>
-                        Гостиница
+                      <label class="control" tabindex="0">
+                        <input class="visually-hidden control-input" type="radio" name="type-house" value="hotel" checked>
+                        <span class="control-mark"></span>
+                        <span class="control-label">Гостиница</span>
                       </label>
                     </li>
 
                     <li class="filter-hotel-item">
-                      <label class="control">
-                        <input class="control-input" type="radio" name="type-house" value="motel">
-                        Мотель
+                      <label class="control" tabindex="0">
+                        <input class="visually-hidden control-input" type="radio" name="type-house" value="motel">
+                        <span class="control-mark"></span>
+                        <span class="control-label">Мотель</span>
                       </label>
                     </li>
 
                     <li class="filter-hotel-item">
-                      <label class="control">
-                        <input class="control-input" type="radio" name="type-house" value="apartments">
-                        Апартаменты
+                      <label class="control" tabindex="0">
+                        <input class="visually-hidden control-input" type="radio" name="type-house" value="apartments">
+                        <span class="control-mark"></span>
+                        <span class="control-label">Апартаменты</span>
                       </label>
                     </li>
 
@@ -156,17 +162,22 @@
                   <legend class="filter-hotel-title">Стоимость, ₽:</legend>
 
                     <div class="price-controls">
-
                       <label class="min-price">
-                        от
-                        <input type="number" name="min-price" value="0">
+                        <input class="range-input" type="number" name="min-price" value="0">
+                        <span>от</span>
                       </label>
 
                       <label class="max-price">
-                        до
-                        <input type="number" name="max-price" value="9000">
+                        <input class="range-input" type="number" name="max-price" value="9000">
+                        <span>до</span>
                       </label>
+                    </div>
 
+                    <div class="range-controls">
+                      <div class="range-bar">
+                        <div class="range-toggle toggle-min" tabindex="0" aria-label="Ползунок изменения минимального значения."></div>
+                        <div class="range-toggle toggle-max" tabindex="0" aria-label="Ползунок изменения максимального значения."></div>
+                      </div>
                     </div>
 
                 </fieldset>
@@ -410,7 +421,7 @@
 
               <li class="footer-social-item">
                 <a class="footer-social-link" href="https://t.me/htmlacademy">
-                  <svg class="footer-social-icon" width="18" height="17" aria-hidden="true" focusable="false" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#a)"><path d="M16.785.6.841 6.747c-1.088.437-1.082 1.044-.2 1.315L4.735 9.34l9.471-5.976c.448-.273.857-.126.521.172l-7.674 6.926h-.001.001l-.282 4.22c.414 0 .596-.19.828-.413l1.989-1.934 4.135 3.055c.763.42 1.31.204 1.5-.706L17.938 1.89C18.216.775 17.513.27 16.786.599Z" fill="#83B3D3"/></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h18v17H0z"/></clipPath></defs></svg>
+                  <svg class="footer-social-icon" width="18" height="17" aria-hidden="true" focusable="false" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#b)"><path d="M16.785.6.841 6.747c-1.088.437-1.082 1.044-.2 1.315L4.735 9.34l9.471-5.976c.448-.273.857-.126.521.172l-7.674 6.926h-.001.001l-.282 4.22c.414 0 .596-.19.828-.413l1.989-1.934 4.135 3.055c.763.42 1.31.204 1.5-.706L17.938 1.89C18.216.775 17.513.27 16.786.599Z" fill="#83B3D3"/></g><defs><clipPath id="b"><path fill="#fff" d="M0 0h18v17H0z"/></clipPath></defs></svg>
                   <span class="visually-hidden">Телеграм</span>
                 </a>
               </li>

@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" type="image/png" href="images/favicon.png">
   </head>
 
   <body>
@@ -185,7 +187,7 @@
         <section class="search-hotel">
           <h2 class="search-hotel-title">Заинтересовались?</h2>
           <p class="search-hotel-text">Укажите предполагаемые даты поездки,<br>
-            и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+            и мы покажем вам лучшие предложения гостиниц в Седоне&nbsp;&nbsp;</p>
           <button class="button button-brown search-hotel-button" type="button">Поиск гостиницы в седоне</button>
         </section>
 
@@ -249,6 +251,68 @@
         </div>
 
       </footer>
+
+      <!-- Снять .modal-container-close для показа модального окна  -->
+      <div class="modal-container modal-container-close">
+        <div class="modal modal-search">
+          <button class="modal-close-button">
+            <span class="modal-close-icon" aria-label="Закрыть."></span>
+          </button>
+          <section class="modal-content">
+            <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+
+            <form class="search-hotel-form" method="get" action="https://echo.htmlacademy.ru">
+              <div class="checkin">
+
+                <label for="checkin-date" class="search-form-field checkin-date">Дата Заезда:</label>
+                <input name="checkin-date" class="search-hotel-date" type="text" id="checkin-date" value="" placeholder="27 апреля 2020">
+                <button class="form-search-calendar" type="button">
+                  <span class="visually-hidden">Выбор даты заезда</span>
+                </button>
+                <span class="message message-error">Мы не можем отправить вас в прошлое.</span>
+              </div>
+
+              <div class="checkout">
+                <label for="checkout-date" class="search-form-field checkout-date">Дата Выезда:</label>
+                <input name="checkout-date" class="search-hotel-date" type="text" id="checkout-date" value="" placeholder="1 сентября 2021">
+                <button class="form-search-calendar" type="button">
+                  <span class="visually-hidden">Выбор даты выезда</span>
+                </button>
+                <span class="message">На эти даты есть свободные номера. Пока есть.</span>
+              </div>
+
+              <div class="search-form-counter search-form-adults">
+                <label for="adults">Взрослые:</label>
+                <div class="number-input-container">
+                  <button class="number-input-button button-minus" type="button" aria-label="Уменьшить количество"></button>
+                  <input name="adults" class="number-input" type="number" id="adults" min="1" value="2">
+                  <button class="number-input-button button-plus" type="button" aria-label="Увеличить количество"></button>
+                </div>
+              </div>
+
+              <div class="search-form-counter search-form-children">
+                <span class="form-label form-label-icon">
+                  <label for="children">Дети:</label>
+                  <span class="tooltip">
+                    <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label">
+                      <svg class="tooltip-icon" width="1" height="9" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#a)" fill="#fff"><path d="M0 9h1V3H0v6ZM1 0H0v1h1V0Z"/></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h1v9H0z"/></clipPath></defs></svg>
+                    </button>
+                    <span class="tooltip-text" role="tooltip" id="tooltip-label">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+                  </span>
+                </span>
+                <div class="number-input-container">
+                  <button class="number-input-button button-minus number-input-cursor" type="button" aria-label="Уменьшить количество"></button>
+                  <input name="children" class="number-input" type="number" id="children" min="0" value="1">
+                  <button class="number-input-button button-plus number-input-cursor" type="button" aria-label="Увеличить количество"></button>
+                </div>
+              </div>
+
+              <button class="modal-hotel-button" type="submit">Найти</button>
+
+            </form>
+          </section>
+        </div>
+      </div>
 
     </div>
 
