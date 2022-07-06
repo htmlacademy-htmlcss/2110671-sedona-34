@@ -606,9 +606,9 @@ body {
   background-color: rgba(242, 242, 242, 0.8);
 }
 
-.modal-container-close {
+/* .modal-container-close {
   display: none;
-}
+} */
 
 .modal {
   position: relative;
@@ -883,6 +883,19 @@ color: #000000;
   cursor: pointer;
   border: 0;
   border-radius: 10px;
+}
+
+.modal-hotel-button:hover {
+  background-color: #68A2CA;
+}
+
+.modal-hotel-button:focus {
+  outline: 3px solid #756257;
+}
+
+.modal-hotel-button:active {
+  background-color: #68A2CA;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .form-label-icon {
