@@ -185,7 +185,7 @@
         <section class="search-hotel">
           <h2 class="search-hotel-title">Заинтересовались?</h2>
           <p class="search-hotel-text">Укажите предполагаемые даты поездки,<br>
-            и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+            и мы покажем вам лучшие предложения гостиниц в Седоне&nbsp;&nbsp;</p>
           <button class="button button-brown search-hotel-button" type="button">Поиск гостиницы в седоне</button>
         </section>
 
@@ -250,10 +250,10 @@
 
       </footer>
 
-      <div class="modal-container">
+      <div class="modal-container modal-container-close">
         <div class="modal modal-search">
           <button class="modal-close-button">
-            <span class="visually-hidden">Закрыть</span>
+            <span class="modal-close-icon" aria-label="Закрыть."></span>
           </button>
           <section class="modal-content">
             <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
@@ -288,7 +288,15 @@
               </div>
 
               <div class="search-form-counter search-form-children">
-                <label for="children">Дети:</label>
+                <span class="form-label form-label-icon">
+                  <label for="children">Дети:</label>
+                  <span class="tooltip">
+                    <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label">
+                      <svg class="tooltip-icon" width="1" height="9" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#a)" fill="#fff"><path d="M0 9h1V3H0v6ZM1 0H0v1h1V0Z"/></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h1v9H0z"/></clipPath></defs></svg>
+                    </button>
+                    <span class="tooltip-text" role="tooltip" id="tooltip-label">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+                  </span>
+                </span>
                 <div class="number-input-container">
                   <button class="number-input-button button-minus number-input-cursor" type="button" aria-label="Уменьшить количество"></button>
                   <input name="children" class="number-input" type="number" id="children" min="0" value="1">
@@ -296,7 +304,7 @@
                 </div>
               </div>
 
-              <button class="search-hotel-button" type="submit">Найти</button>
+              <button class="modal-hotel-button" type="submit">Найти</button>
 
             </form>
           </section>
