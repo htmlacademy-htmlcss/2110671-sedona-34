@@ -187,7 +187,7 @@
         <section class="search-hotel">
           <h2 class="search-hotel-title">Заинтересовались?</h2>
           <p class="search-hotel-text">Укажите предполагаемые даты поездки,<br>
-            и мы покажем вам лучшие предложения гостиниц в Седоне&nbsp;&nbsp;</p>
+            и мы покажем вам лучшие предложения гостиниц в Седоне</p>
           <button class="button button-brown search-hotel-button" type="button">Поиск гостиницы в седоне</button>
         </section>
 
@@ -255,7 +255,7 @@
       <!-- Снять .modal-container-close для показа модального окна  -->
       <div class="modal-container modal-container-close">
         <div class="modal modal-search">
-          <button class="modal-close-button">
+          <button class="button modal-close-button" type="button">
             <span class="modal-close-icon" aria-label="Закрыть."></span>
           </button>
           <section class="modal-content">
@@ -267,6 +267,7 @@
                 <label for="checkin-date" class="search-form-field checkin-date">Дата Заезда:</label>
                 <input name="checkin-date" class="search-hotel-date" type="text" id="checkin-date" value="" placeholder="27 апреля 2020">
                 <button class="form-search-calendar" type="button">
+                  <svg width="15" height="15" aria-hidden="true" focusable="false" fill="none" xmlns="http://www.w3.org/2000/svg"><g fill="currentColor"><path d="M5.5 10c.3 0 .5-.2.5-.5S5.8 9 5.5 9s-.5.2-.5.5.2.5.5.5Z"/><path d="M14 2h-2V0h-1v2H4V0H3v2H1c-.6 0-1 .4-1 1v11c0 .5.4 1 1 1h13c.5 0 1-.5 1-1V3c0-.6-.5-1-1-1Zm0 12H1V7h13v7ZM1 6V3h2v2h1V3h7v2h1V3h2v3H1Z"/><path d="M7.5 10c.3 0 .5-.2.5-.5S7.8 9 7.5 9s-.5.2-.5.5.2.5.5.5ZM9.5 10c.3 0 .5-.2.5-.5S9.8 9 9.5 9s-.5.2-.5.5.2.5.5.5ZM5.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM3.5 10c.3 0 .5-.2.5-.5S3.8 9 3.5 9s-.5.2-.5.5.2.5.5.5ZM3.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM7.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM9.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM11.5 10c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM11.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5Z"/></g></svg>
                   <span class="visually-hidden">Выбор даты заезда</span>
                 </button>
                 <span class="message message-error">Мы не можем отправить вас в прошлое.</span>
@@ -276,6 +277,7 @@
                 <label for="checkout-date" class="search-form-field checkout-date">Дата Выезда:</label>
                 <input name="checkout-date" class="search-hotel-date" type="text" id="checkout-date" value="" placeholder="1 сентября 2021">
                 <button class="form-search-calendar" type="button">
+                  <svg width="15" height="15" aria-hidden="true" focusable="false" fill="none" xmlns="http://www.w3.org/2000/svg"><g fill="currentColor"><path d="M5.5 10c.3 0 .5-.2.5-.5S5.8 9 5.5 9s-.5.2-.5.5.2.5.5.5Z"/><path d="M14 2h-2V0h-1v2H4V0H3v2H1c-.6 0-1 .4-1 1v11c0 .5.4 1 1 1h13c.5 0 1-.5 1-1V3c0-.6-.5-1-1-1Zm0 12H1V7h13v7ZM1 6V3h2v2h1V3h7v2h1V3h2v3H1Z"/><path d="M7.5 10c.3 0 .5-.2.5-.5S7.8 9 7.5 9s-.5.2-.5.5.2.5.5.5ZM9.5 10c.3 0 .5-.2.5-.5S9.8 9 9.5 9s-.5.2-.5.5.2.5.5.5ZM5.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM3.5 10c.3 0 .5-.2.5-.5S3.8 9 3.5 9s-.5.2-.5.5.2.5.5.5ZM3.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM7.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM9.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM11.5 10c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM11.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5Z"/></g></svg>
                   <span class="visually-hidden">Выбор даты выезда</span>
                 </button>
                 <span class="message">На эти даты есть свободные номера. Пока есть.</span>
@@ -284,9 +286,9 @@
               <div class="search-form-counter search-form-adults">
                 <label for="adults">Взрослые:</label>
                 <div class="number-input-container">
-                  <button class="number-input-button button-minus" type="button" aria-label="Уменьшить количество"></button>
+                  <button class="number-input-button button-minus" type="button" aria-label="Уменьшить количество."></button>
                   <input name="adults" class="number-input" type="number" id="adults" min="1" value="2">
-                  <button class="number-input-button button-plus" type="button" aria-label="Увеличить количество"></button>
+                  <button class="number-input-button button-plus" type="button" aria-label="Увеличить количество."></button>
                 </div>
               </div>
 
@@ -301,13 +303,13 @@
                   </span>
                 </span>
                 <div class="number-input-container">
-                  <button class="number-input-button button-minus number-input-cursor" type="button" aria-label="Уменьшить количество"></button>
+                  <button class="number-input-button button-minus number-input-cursor" type="button" aria-label="Уменьшить количество."></button>
                   <input name="children" class="number-input" type="number" id="children" min="0" value="1">
-                  <button class="number-input-button button-plus number-input-cursor" type="button" aria-label="Увеличить количество"></button>
+                  <button class="number-input-button button-plus number-input-cursor" type="button" aria-label="Увеличить количество."></button>
                 </div>
               </div>
 
-              <button class="modal-hotel-button" type="submit">Найти</button>
+              <button class="button modal-hotel-button" type="submit">Найти</button>
 
             </form>
           </section>
