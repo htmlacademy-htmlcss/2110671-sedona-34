@@ -397,6 +397,8 @@ body {
 
 .reasons-item-image img {
   display: block;
+  height: 100%;
+  object-fit: cover;
 }
 
 .item-dark-blue {
@@ -1048,7 +1050,7 @@ body {
 
 .filters {
   padding-top: 35px;
-  padding-bottom: 70px;
+  padding-bottom: 30px;
   margin-bottom: 56px;
   background-image: url("../images/background/background-filter.jpg");
   background-size: cover;
@@ -1122,6 +1124,7 @@ body {
 .filter-hotel-cost {
   margin: 0;
   margin-right: 70px;
+  margin-bottom: 40px;
   padding: 0;
   border: none;
 }
@@ -1141,6 +1144,7 @@ body {
 
 .filter-hotel {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .filter-hotel-title {
@@ -1164,6 +1168,11 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  padding-bottom: 40px;
+}
+
+.filter-hotel-controls:not(:last-child) {
+  margin-right: 65px;
 }
 
 .control {
@@ -1212,15 +1221,15 @@ body {
   content: "";
 }
 
-.control:hover .control-mark {
+.control-input:hover + .control-mark {
   opacity: 0.6;
 }
 
-.control:focus .control-mark {
+.control-input:focus + .control-mark {
   box-shadow: 0 0 0 3px #83b3d3;
 }
 
-.control:active .control-mark {
+.control-input:active + .control-mark {
   opacity: 0.3;
 }
 
